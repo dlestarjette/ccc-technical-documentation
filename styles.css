@@ -1,0 +1,137 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: navy;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	display: block;
+	width: 60%;
+	margin: 25px 25px 25px 50px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.075);
+}
+
+
+nav header figure {
+	display: block;
+	margin: 0 auto 0 16px;
+	padding-top: 20px;
+	width: 75%;
+}
+
+.main-section header {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	color: rgb(140,45,38);
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.main-section header:first-of-type { padding-top: 5px; }
+
+main {
+	width: auto;
+	position: relative;
+	margin: 0 auto 0 270px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #ccc;	
+}
+
+.main-section {
+	margin-bottom: 35px;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: .5rem;
+}
+
+figcaption {
+	font-size: small;
+	font-style: italic;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.main-section:last-of-type {
+	margin-bottom: 0;
+}
+
+.main-section p {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	line-height: 1.25;
+}
+
+.main-section p:first-of-type {
+	margin-top: 0;
+}
+
+nav {
+	position: fixed;
+	width: 250px;
+	top: 0;
+	left: 0;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+nav li {
+	line-height: 2;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+nav li:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+nav li a {
+	text-decoration: none;
+	color: rgb(140,45,38);
+}
+
+nav li a:hover {
+	background-color: rgb(140,45,38);
+	color: white;
+	padding: 2px 4px;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+    	position: relative;
+    	width: 100%;
+    	padding-top: 5px;
+    }
+    
+    nav header figure {
+    	display: none;
+    }
+    
+    main {
+    	margin: 0 auto;
+    }
+}
